@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="keywords" content="Web Developer">
+    <meta name="description" content="Carlos Chavarria - Web Development">
+    <meta name="author" content="Carlos Chavarria"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Reminders</title>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="site.js" type="text/javascript"> </script>
+
+    <style>
+      body {
+        background-image: url(spacey.jpg);
+        background-color: #1a1a1a;
+        color: white;
+      }
+      h2 {
+        color: #d9d9d9;
+        text-align: center;
+      }
+      h3 {
+        color: #A92F41;
+      }
+      label {
+        color: #A92F41;
+      }
+      </style>
+
+  </head>
+
+  <body>
+    <hr>
+    <div class="container">
+    <h2> Reminders</h2>
+    </div>
+
+    <hr>
+
+    <div class="container">
+		<form id="myForm" name="checkListForm">
+      <div class="form-group">
+        <label> To Do </label>
+        <input type="text" class="form-control" name="checkListItem" placeholder="Enter New Reminders Here"/>
+      </div>
+		</form>
+		<button class="btn btn-primary" id="button">Add!</button>
+    <br/>
+    
+    <hr>
+    <h3>To Do List: </h3>
+      <div class="alert alert-info alert-dismissable" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span> &times;</span></button>
+        Click on Items to Remove
+    </div>
+      <div class="clear-fix"> </div>
+
+    <div class="list"></div>
+    
+    </div>
+  </body>
+
+</html>
